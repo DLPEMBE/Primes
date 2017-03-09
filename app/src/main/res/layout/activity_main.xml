@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView" />
+
+        <RelativeLayout
+            android:id="@+id/rrButtons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight=".1">
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="@dimen/activity_main2__button_width"
+                android:layout_height="@dimen/activity_main2__button_height"
+                android:onClick="btnClear_OnClick"
+                android:text="@string/Main2_btnClear_Text"
+                android:textSize="@dimen/activity_main2__button_fontsize"
+                android:visibility="visible"
+                android:enabled="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentRight="false"
+                 />
+
+            <Button
+                android:id="@+id/btnSendAppStop"
+                android:layout_width="@dimen/activity_main2__StopAppbutton_width"
+                android:layout_height="@dimen/activity_main2__button_height"
+                android:onClick="btnSendAppStop_OnClick"
+                android:text="@string/Main2_btnStopApp_Text"
+                android:textSize="@dimen/activity_main2__button_fontsize"
+                android:visibility="visible"
+                android:enabled="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentStart="false"
+                android:layout_toRightOf="@id/btnClear" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_main2_layout_height"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_layout_margin_top"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Main2_tvEnlistPrimes_Text"
+                android:textSize="@dimen/activity_main2__text_fontsize"
+                android:id="@+id/tvEnlistPrimes"
+                android:visibility="visible"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/evEnlistPrimes"
+                android:hint="@string/Main2_btnEnlistPrimes_Hint"
+                android:textSize="@dimen/activity_main2__text_fontsize"
+                android:visibility="visible"
+                android:imeOptions="actionDone"
+                />
+
+            <Button
+                android:layout_width="@dimen/activity_main2__button_width"
+                android:layout_height="@dimen/activity_main2__button_height"
+                android:text="@string/Main2_btnEnter_Text"
+                android:textSize="@dimen/activity_main2__button_fontsize"
+                android:id="@+id/btnEnter"
+                android:visibility="visible"
+                android:onClick="btnEnter_OnClick"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_layout2_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/linearLayout2">
+            <TextView
+                android:id="@+id/tvEnlistResult"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text="@string/Main2_tvTest_Text"
+                android:textSize="@dimen/activity_main2_tvEnlistResult_textsize"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@+id/tvEnlistPrimes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_layout3_margin_top"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/linearLayout3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Main2_tvQueryPrimes_Text"
+                android:textSize="@dimen/activity_main2__text_fontsize"
+                android:id="@+id/tvQueryN"
+                android:visibility="visible"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/evQueryN"
+                android:hint="@string/Main2_btnQueryPrimes_Hint"
+                android:textSize="@dimen/activity_main2__text_fontsize"
+                android:visibility="visible"
+                android:imeOptions="actionDone"
+                />
+
+            <Button
+                android:layout_width="@dimen/activity_main2__button_width"
+                android:layout_height="@dimen/activity_main2__button_height"
+                android:text="@string/Main2_btnQueryNEnter_Text"
+                android:textSize="@dimen/activity_main2__button_fontsize"
+                android:id="@+id/btnQueryNEnter"
+                android:visibility="visible"
+                android:onClick="btnQueryNEnter_OnClick"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvQueryResult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="@string/Main2_tvTest_Text"
+            android:textSize="@dimen/activity_main2_tvQueryResult_textsize"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_above="@+id/btnSendAppStop"
+            android:layout_below="@+id/linearLayout" />
+        <!-- android:layout_toRightOf="@id/btnSendCurrentLogCat"-->
+    </LinearLayout>
+
+</ScrollView>

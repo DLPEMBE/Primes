@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Nth Prime</string>
+    <string name="Main2_btnStopApp_Text">Stop App</string>
+    <string name="Main2_btnClear_Text">Clear</string>
+    <string name="GLOBAL_stop_this_application">Are you sure you want to stop this application?</string>
+    <string name="GLOBAL_Starting_EnlistPrimes_Entered">Total Number of Primes must be entered!</string>
+    <string name="GLOBAL_OK">OK</string>
+    <string name="GLOBAL_EnlistPrimes_GreaterThanZero">Number of Primes must be greater than zero!</string>
+    <string name="GLOBAL_CANCEL">CANCEL</string>
+    <string name="Main2_tvEnlistPrimes_Text">Enter Total Number of Primes:</string>
+    <string name="Main2_tvQueryPrimes_Text">Enter Nth Prime to query:</string>
+
+    <string name="Main2_tvHeaderLineRight_Text"> </string>
+
+    <string name="Main2_btnEnlistPrimes_Text">Set Odometer</string>
+    <string name="Main2_btnEnlistPrimes_Hint">Total Primes to Enlist</string>
+    <string name="Main2_btnQueryPrimes_Hint">Enter Nth Prime to query</string>
+    <string name="Main2_btnEnter_Text">Enlist</string>
+    <string name="Main2_btnQueryNEnter_Text">Query</string>
+    <string name="Main2_tvTest_Text"></string>
+    <string name="GLOBAL_Starting_QueryPrimes_Entered">Nth Prime to query must be entered!</string>
+    <string name="GLOBAL_QueryPrimes_GreaterThanZero">Number of Nth Primes must be greater than zero!</string>
+    <string name="GLOBAL_QueryPrimes_GreaterThanEnlisted">Queried Nth Primes cannot be greater than Total Enlisted!</string>
+    <string name="GLOBAL_QueryPrimes_NoValuesEnlisted">Primes must be Enlisted before Queried!</string>
+</resources>
